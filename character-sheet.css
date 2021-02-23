@@ -5,6 +5,7 @@
 
 .sheet-sub-section {
     padding: 1rem!important;
+    display: none;
 }
 
 .sheet-inline {
@@ -37,6 +38,10 @@
     margin-bottom: 10px;
 }
 
+input.sheet-arrow:checked ~ div.sheet-sub-section {
+    display: block;
+}
+
 /* Checkboxes and checkbox labels*/
 input[type="checkbox"] {
     display: inline-block;
@@ -44,7 +49,11 @@ input[type="checkbox"] {
     border-radius: 0px;
 }
 
-.sheet-checkbox {
+.sheet-checkbox-label {
+    display: inline;
+}
+
+.sheet-checkbox-label-small {
     display: inline;
     font-size: 1rem;
 }
